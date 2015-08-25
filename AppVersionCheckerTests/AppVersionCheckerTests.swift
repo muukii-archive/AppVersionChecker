@@ -21,16 +21,32 @@ class AppVersionCheckerTests: XCTestCase {
         super.tearDown()
     }
     
-    func testExample() {
-        // This is an example of a functional test case.
-        // Use XCTAssert and related functions to verify your tests produce the correct results.
+    func testVersion() {
+        XCTAssert(AppVersion("1.4.5") <= "1.5.5")
+        XCTAssert(AppVersion("1.4.5") <= "1.55.0")
+        XCTAssert(AppVersion("1.4.5") <= "1.555.0")
+        XCTAssert(AppVersion("1.4.5") <= "1.4.5.4")
+        XCTAssert(AppVersion("1.4.5") <= "1.4.5.3.4.6")
+        XCTAssert(AppVersion("1.4.5") <= "2.0.0")
+        
+        XCTAssert((AppVersion("1.5.5") <= "1.4.5") == false)
+        XCTAssert((AppVersion("1.55.0") <= "1.4.5") == false)
+        XCTAssert((AppVersion("1.555.0") <= "1.4.5") == false)
+        XCTAssert((AppVersion("1.4.5.4") <= "1.4.5") == false)
+        XCTAssert((AppVersion("1.4.5.3.4.6.") <= "1.4.5") == false)
+        XCTAssert((AppVersion("2.0.0") <= "1.4.5") == false)
+        
+        XCTAssert((AppVersion("1.4.5") >= "1.5.5") == false)
+        XCTAssert((AppVersion("1.4.5") >= "1.55.0") == false)
+        XCTAssert((AppVersion("1.4.5") >= "1.555.0") == false)
+        XCTAssert((AppVersion("1.4.5") >= "1.4.5.4") == false)
+        XCTAssert((AppVersion("1.4.5") >= "1.4.5.3.4.6") == false)
+        XCTAssert((AppVersion("1.4.5") >= "2.0.0") == false)
+        
+        XCTAssert(AppVersion("2.0.0") == "2.0.0")
+        XCTAssert(AppVersion("2.0.0") == "2.0.0.0")
+        XCTAssert(AppVersion("2.0.0") == "2.00.00.0.0")
+        
+        
     }
-    
-    func testPerformanceExample() {
-        // This is an example of a performance test case.
-        self.measureBlock {
-            // Put the code you want to measure the time of here.
-        }
-    }
-    
 }

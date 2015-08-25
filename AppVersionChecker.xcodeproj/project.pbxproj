@@ -10,6 +10,7 @@
 		4BC642321B8C634800DE51BF /* AppVersionChecker.h in Headers */ = {isa = PBXBuildFile; fileRef = 4BC642311B8C634800DE51BF /* AppVersionChecker.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		4BC642391B8C634800DE51BF /* AppVersionChecker.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4BC6422E1B8C634800DE51BF /* AppVersionChecker.framework */; settings = {ASSET_TAGS = (); }; };
 		4BC6423E1B8C634800DE51BF /* AppVersionCheckerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4BC6423D1B8C634800DE51BF /* AppVersionCheckerTests.swift */; };
+		4BC642491B8C635400DE51BF /* AppVersion.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4BC642481B8C635400DE51BF /* AppVersion.swift */; settings = {ASSET_TAGS = (); }; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -29,6 +30,7 @@
 		4BC642381B8C634800DE51BF /* AppVersionCheckerTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = AppVersionCheckerTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		4BC6423D1B8C634800DE51BF /* AppVersionCheckerTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppVersionCheckerTests.swift; sourceTree = "<group>"; };
 		4BC6423F1B8C634800DE51BF /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		4BC642481B8C635400DE51BF /* AppVersion.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AppVersion.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -72,6 +74,7 @@
 			isa = PBXGroup;
 			children = (
 				4BC642311B8C634800DE51BF /* AppVersionChecker.h */,
+				4BC642481B8C635400DE51BF /* AppVersion.swift */,
 				4BC642331B8C634800DE51BF /* Info.plist */,
 			);
 			path = AppVersionChecker;
@@ -142,6 +145,7 @@
 		4BC642251B8C634800DE51BF /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
+				LastSwiftUpdateCheck = 0700;
 				LastUpgradeCheck = 0700;
 				ORGANIZATIONNAME = muukii;
 				TargetAttributes = {
@@ -193,6 +197,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				4BC642491B8C635400DE51BF /* AppVersion.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -307,6 +312,7 @@
 		4BC642431B8C634800DE51BF /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				DEFINES_MODULE = YES;
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
@@ -317,12 +323,14 @@
 				PRODUCT_BUNDLE_IDENTIFIER = me.muukii.AppVersionChecker;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SKIP_INSTALL = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 			};
 			name = Debug;
 		};
 		4BC642441B8C634800DE51BF /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				DEFINES_MODULE = YES;
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
