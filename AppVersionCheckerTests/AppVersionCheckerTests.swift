@@ -47,6 +47,13 @@ class AppVersionCheckerTests: XCTestCase {
         XCTAssert(AppVersion("2.0.0") == "2.0.0.0")
         XCTAssert(AppVersion("2.0.0") == "2.00.00.0.0")
         
+        XCTAssert((AppVersion("2.0.0") == "23.0.1") == false)
+        XCTAssert((AppVersion("2.0.0") >= "23.0.1") == false)
+        XCTAssert((AppVersion("2.0.0") <= "23.0.1") == true)
+        
+        XCTAssert((AppVersion("23.0.1") == "2.0.0") == false)
+        XCTAssert((AppVersion("23.0.1") >= "2.0.0") == true)
+        XCTAssert((AppVersion("23.0.1") <= "2.0.0") == false)
         
     }
 }
