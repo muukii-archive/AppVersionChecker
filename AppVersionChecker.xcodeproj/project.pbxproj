@@ -1,0 +1,390 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		4BC642321B8C634800DE51BF /* AppVersionChecker.h in Headers */ = {isa = PBXBuildFile; fileRef = 4BC642311B8C634800DE51BF /* AppVersionChecker.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		4BC642391B8C634800DE51BF /* AppVersionChecker.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4BC6422E1B8C634800DE51BF /* AppVersionChecker.framework */; settings = {ASSET_TAGS = (); }; };
+		4BC6423E1B8C634800DE51BF /* AppVersionCheckerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4BC6423D1B8C634800DE51BF /* AppVersionCheckerTests.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		4BC6423A1B8C634800DE51BF /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 4BC642251B8C634800DE51BF /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 4BC6422D1B8C634800DE51BF;
+			remoteInfo = AppVersionChecker;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		4BC6422E1B8C634800DE51BF /* AppVersionChecker.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = AppVersionChecker.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		4BC642311B8C634800DE51BF /* AppVersionChecker.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppVersionChecker.h; sourceTree = "<group>"; };
+		4BC642331B8C634800DE51BF /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		4BC642381B8C634800DE51BF /* AppVersionCheckerTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = AppVersionCheckerTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		4BC6423D1B8C634800DE51BF /* AppVersionCheckerTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppVersionCheckerTests.swift; sourceTree = "<group>"; };
+		4BC6423F1B8C634800DE51BF /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		4BC6422A1B8C634800DE51BF /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		4BC642351B8C634800DE51BF /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				4BC642391B8C634800DE51BF /* AppVersionChecker.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		4BC642241B8C634800DE51BF = {
+			isa = PBXGroup;
+			children = (
+				4BC642301B8C634800DE51BF /* AppVersionChecker */,
+				4BC6423C1B8C634800DE51BF /* AppVersionCheckerTests */,
+				4BC6422F1B8C634800DE51BF /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		4BC6422F1B8C634800DE51BF /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				4BC6422E1B8C634800DE51BF /* AppVersionChecker.framework */,
+				4BC642381B8C634800DE51BF /* AppVersionCheckerTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		4BC642301B8C634800DE51BF /* AppVersionChecker */ = {
+			isa = PBXGroup;
+			children = (
+				4BC642311B8C634800DE51BF /* AppVersionChecker.h */,
+				4BC642331B8C634800DE51BF /* Info.plist */,
+			);
+			path = AppVersionChecker;
+			sourceTree = "<group>";
+		};
+		4BC6423C1B8C634800DE51BF /* AppVersionCheckerTests */ = {
+			isa = PBXGroup;
+			children = (
+				4BC6423D1B8C634800DE51BF /* AppVersionCheckerTests.swift */,
+				4BC6423F1B8C634800DE51BF /* Info.plist */,
+			);
+			path = AppVersionCheckerTests;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXHeadersBuildPhase section */
+		4BC6422B1B8C634800DE51BF /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				4BC642321B8C634800DE51BF /* AppVersionChecker.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXHeadersBuildPhase section */
+
+/* Begin PBXNativeTarget section */
+		4BC6422D1B8C634800DE51BF /* AppVersionChecker */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 4BC642421B8C634800DE51BF /* Build configuration list for PBXNativeTarget "AppVersionChecker" */;
+			buildPhases = (
+				4BC642291B8C634800DE51BF /* Sources */,
+				4BC6422A1B8C634800DE51BF /* Frameworks */,
+				4BC6422B1B8C634800DE51BF /* Headers */,
+				4BC6422C1B8C634800DE51BF /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = AppVersionChecker;
+			productName = AppVersionChecker;
+			productReference = 4BC6422E1B8C634800DE51BF /* AppVersionChecker.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		4BC642371B8C634800DE51BF /* AppVersionCheckerTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 4BC642451B8C634800DE51BF /* Build configuration list for PBXNativeTarget "AppVersionCheckerTests" */;
+			buildPhases = (
+				4BC642341B8C634800DE51BF /* Sources */,
+				4BC642351B8C634800DE51BF /* Frameworks */,
+				4BC642361B8C634800DE51BF /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				4BC6423B1B8C634800DE51BF /* PBXTargetDependency */,
+			);
+			name = AppVersionCheckerTests;
+			productName = AppVersionCheckerTests;
+			productReference = 4BC642381B8C634800DE51BF /* AppVersionCheckerTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		4BC642251B8C634800DE51BF /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0700;
+				ORGANIZATIONNAME = muukii;
+				TargetAttributes = {
+					4BC6422D1B8C634800DE51BF = {
+						CreatedOnToolsVersion = 7.0;
+					};
+					4BC642371B8C634800DE51BF = {
+						CreatedOnToolsVersion = 7.0;
+					};
+				};
+			};
+			buildConfigurationList = 4BC642281B8C634800DE51BF /* Build configuration list for PBXProject "AppVersionChecker" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = 4BC642241B8C634800DE51BF;
+			productRefGroup = 4BC6422F1B8C634800DE51BF /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				4BC6422D1B8C634800DE51BF /* AppVersionChecker */,
+				4BC642371B8C634800DE51BF /* AppVersionCheckerTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		4BC6422C1B8C634800DE51BF /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		4BC642361B8C634800DE51BF /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		4BC642291B8C634800DE51BF /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		4BC642341B8C634800DE51BF /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				4BC6423E1B8C634800DE51BF /* AppVersionCheckerTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		4BC6423B1B8C634800DE51BF /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 4BC6422D1B8C634800DE51BF /* AppVersionChecker */;
+			targetProxy = 4BC6423A1B8C634800DE51BF /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		4BC642401B8C634800DE51BF /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		4BC642411B8C634800DE51BF /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		4BC642431B8C634800DE51BF /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = AppVersionChecker/Info.plist;
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = me.muukii.AppVersionChecker;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+			};
+			name = Debug;
+		};
+		4BC642441B8C634800DE51BF /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = AppVersionChecker/Info.plist;
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = me.muukii.AppVersionChecker;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+			};
+			name = Release;
+		};
+		4BC642461B8C634800DE51BF /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				INFOPLIST_FILE = AppVersionCheckerTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = me.muukii.AppVersionCheckerTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		4BC642471B8C634800DE51BF /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				INFOPLIST_FILE = AppVersionCheckerTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = me.muukii.AppVersionCheckerTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		4BC642281B8C634800DE51BF /* Build configuration list for PBXProject "AppVersionChecker" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				4BC642401B8C634800DE51BF /* Debug */,
+				4BC642411B8C634800DE51BF /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		4BC642421B8C634800DE51BF /* Build configuration list for PBXNativeTarget "AppVersionChecker" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				4BC642431B8C634800DE51BF /* Debug */,
+				4BC642441B8C634800DE51BF /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		4BC642451B8C634800DE51BF /* Build configuration list for PBXNativeTarget "AppVersionCheckerTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				4BC642461B8C634800DE51BF /* Debug */,
+				4BC642471B8C634800DE51BF /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 4BC642251B8C634800DE51BF /* Project object */;
+}
