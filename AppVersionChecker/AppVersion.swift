@@ -71,6 +71,11 @@ public func <= (lhs: AppVersion, rhs: AppVersion) -> Bool {
     return (lhs == rhs)
 }
 
+public func < (lhs: AppVersion, rhs: AppVersion) -> Bool {
+    
+    return (lhs <= rhs) && !(lhs == rhs)
+}
+
 public struct AppVersion: StringLiteralConvertible {
     
     public static var currentShortVersion: AppVersion {
