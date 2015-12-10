@@ -8,75 +8,41 @@
 
 import Foundation
 
-public func >= (lhs: AppVersion, rhs: AppVersion) -> Bool {
+private func parseVersion(lhs: AppVersion, rhs: AppVersion) -> Zip2Sequence<[Int], [Int]> {
     
     let lhs = lhs.versionString.characters.split(".").map { (String($0) as NSString).integerValue }
     let rhs = rhs.versionString.characters.split(".").map { (String($0) as NSString).integerValue }
     let count = max(lhs.count, rhs.count)
-    
-    for (r, l) in zip(
+    return zip(
         lhs + Array(count: count - lhs.count, repeatedValue: 0),
-        rhs + Array(count: count - rhs.count, repeatedValue: 0)) {
-            
-            print(l,r)
-            if l < r {
-                
-                return true
-            } else if l > r {
-                
-                return false
-            }
-    }
-    return (lhs == rhs)
+        rhs + Array(count: count - rhs.count, repeatedValue: 0))
 }
 
 public func == (lhs: AppVersion, rhs: AppVersion) -> Bool {
     
-    let lhs = lhs.versionString.characters.split(".").map { (String($0) as NSString).integerValue }
-    let rhs = rhs.versionString.characters.split(".").map { (String($0) as NSString).integerValue }
-    let count = max(lhs.count, rhs.count)
-    
     var result: Bool = true
-    
-    for (l, r) in zip(
-        lhs + Array(count: count - lhs.count, repeatedValue: 0),
-        rhs + Array(count: count - rhs.count, repeatedValue: 0)) {
+    for (l, r) in parseVersion(lhs, rhs: rhs) {
             
-            if l != r {
-                result = false
-            }
-    }
-    
+        if l != r {
+            result = false
+        }
+    }    
     return result
-}
-
-public func <= (lhs: AppVersion, rhs: AppVersion) -> Bool {
-    
-    let lhs = lhs.versionString.characters.split(".").map { (String($0) as NSString).integerValue }
-    let rhs = rhs.versionString.characters.split(".").map { (String($0) as NSString).integerValue }
-    
-    
-    let count = max(lhs.count, rhs.count)
-    for (l, r) in zip(
-        lhs + Array(count: count - lhs.count, repeatedValue: 0),
-        rhs + Array(count: count - rhs.count, repeatedValue: 0)) {
-            
-            if l < r {
-                return true
-            } else if l > r {
-                return false
-            }
-    }
-    
-    return (lhs == rhs)
 }
 
 public func < (lhs: AppVersion, rhs: AppVersion) -> Bool {
     
-    return (lhs <= rhs) && !(lhs == rhs)
+    for (l, r) in parseVersion(lhs, rhs: rhs) {
+        if l < r {
+            return true
+        } else if l > r {
+            return false
+        }
+    }
+    return false
 }
 
-public struct AppVersion: StringLiteralConvertible {
+public struct AppVersion: StringLiteralConvertible, Comparable {
     
     public static var currentShortVersion: AppVersion {
         
